@@ -1,0 +1,2325 @@
+version 2
+run General-0-20131127-18:15:30-7016
+attr configname General
+attr datetime 20131127-18:15:30
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Network
+attr processid 7016
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Network.ICS.app 	sentPk:count 	0
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar Network.ICS.app 	sentPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar Network.ICS.app 	rcvdPk:count 	10
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar Network.ICS.app 	rcvdPk:sum(packetBytes) 	10000
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic Network.ICS.app 	endToEndDelay:histogram
+field count 10
+field mean 0.0003244679961
+field stddev 7.2779458497683e-005
+field sum 0.003244679961
+field sqrsum 1.1004664511444e-006
+field min 0.000249659997
+field max 0.000415899995
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, histogram"
+attr unit  s
+bin	-INF	0
+bin	0.000166539998	0
+bin	0.00017762266453333	0
+bin	0.00018870533106667	0
+bin	0.0001997879976	0
+bin	0.00021087066413333	0
+bin	0.00022195333066667	0
+bin	0.0002330359972	0
+bin	0.00024411866373333	4
+bin	0.00025520133026667	0
+bin	0.0002662839968	0
+bin	0.00027736666333333	0
+bin	0.00028844932986667	0
+bin	0.0002995319964	0
+bin	0.00031061466293333	0
+bin	0.00032169732946667	0
+bin	0.000332779996	3
+bin	0.00034386266253333	0
+bin	0.00035494532906667	0
+bin	0.0003660279956	0
+bin	0.00037711066213333	0
+bin	0.00038819332866667	0
+bin	0.0003992759952	0
+bin	0.00041035866173333	3
+bin	0.00042144132826667	0
+bin	0.0004325239948	0
+bin	0.00044360666133333	0
+bin	0.00045468932786667	0
+bin	0.0004657719944	0
+bin	0.00047685466093333	0
+bin	0.00048793732746667	0
+bin	0.000499019994	0
+scalar Network.ICS.encap 	decapPk:count 	10
+attr interpolationmode  none
+attr source  decapPk
+attr title  "packets decapsulated, count"
+scalar Network.ICS.encap 	decapPk:sum(packetBytes) 	10000
+attr interpolationmode  none
+attr source  decapPk
+attr title  "packets decapsulated, sum(packetBytes)"
+scalar Network.ICS.encap 	encapPk:count 	0
+attr interpolationmode  none
+attr source  encapPk
+attr title  "packets encapsulated, count"
+scalar Network.ICS.encap 	encapPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  encapPk
+attr title  "packets encapsulated, sum(packetBytes)"
+scalar Network.ICS.queue 	queueLength:max 	0
+attr interpolationmode  sample-hold
+attr title  "queue length, max"
+scalar Network.ICS.queue 	queueLength:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "queue length, timeavg"
+statistic Network.ICS.queue 	queueingTime:histogram
+field count 0
+field mean 0
+field stddev -1.#IND
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr title  "queueing time, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	-6.9388939039072e-018	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar Network.ICS.queue 	dropPk:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, count"
+scalar Network.ICS.queue 	dropPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, sum(packetBytes)"
+scalar Network.ICS.queue 	rcvdPk:count 	0
+attr interpolationmode  none
+attr title  "received packets, count"
+scalar Network.ICS.queue 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr title  "received packets, sum(packetBytes)"
+scalar Network.ICS.mac 	"simulated time" 	0.300250519996
+scalar Network.ICS.mac 	full-duplex 	1
+scalar Network.ICS.mac 	"frames/sec sent" 	0
+scalar Network.ICS.mac 	"frames/sec rcvd" 	33.305521003372
+scalar Network.ICS.mac 	"bits/sec sent" 	0
+scalar Network.ICS.mac 	"bits/sec rcvd" 	271506.60721948
+scalar Network.ICS.mac 	"rx channel idle (%)" 	99.726361839436
+scalar Network.ICS.mac 	"rx channel utilization (%)" 	0.2736381605637
+scalar Network.ICS.mac 	"rx channel collision (%)" 	0
+scalar Network.ICS.mac 	collisions 	0
+scalar Network.ICS.mac 	backoffs 	0
+scalar Network.ICS.mac 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar Network.ICS.mac 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar Network.ICS.mac 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar Network.ICS.mac 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar Network.ICS.mac 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar Network.ICS.mac 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar Network.ICS.mac 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar Network.ICS.mac 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar Network.ICS.mac 	rxPkFromHL:count 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar Network.ICS.mac 	rxPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar Network.ICS.mac 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar Network.ICS.mac 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar Network.ICS.mac 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar Network.ICS.mac 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar Network.ICS.mac 	passedUpPk:count 	10
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Network.ICS.mac 	passedUpPk:sum(packetBytes) 	10190
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Network.ICS.mac 	rxPkOk:count 	10
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar Network.ICS.mac 	rxPkOk:sum(packetBytes) 	10190
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar Network.ICS.mac 	txPk:count 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar Network.ICS.mac 	txPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar Network.switch.relayUnit 	"processed frames" 	12
+scalar Network.switch.relayUnit 	"dropped frames" 	0
+scalar Network.switch.relayUnit 	droppedBytes:count 	0
+attr title  "Dropped bytes, count"
+scalar Network.switch.relayUnit 	droppedBytes:sum 	0
+attr title  "Dropped bytes, sum"
+scalar Network.switch.relayUnit 	processedBytes:count 	0
+attr title  "Processed bytes, count"
+scalar Network.switch.relayUnit 	processedBytes:sum 	0
+attr title  "Processed bytes, sum"
+scalar Network.switch.relayUnit 	usedBufferBytes:max 	-1.#IND
+attr title  "Used buffer bytes, max"
+scalar Network.switch.relayUnit 	usedBufferBytes:timeavg 	-1.#IND
+attr title  "Used buffer bytes, timeavg"
+scalar Network.switch.mac[0] 	"simulated time" 	0.300250519996
+scalar Network.switch.mac[0] 	full-duplex 	1
+scalar Network.switch.mac[0] 	"frames/sec sent" 	33.305521003372
+scalar Network.switch.mac[0] 	"frames/sec rcvd" 	0
+scalar Network.switch.mac[0] 	"bits/sec sent" 	271506.60721948
+scalar Network.switch.mac[0] 	"bits/sec rcvd" 	0
+scalar Network.switch.mac[0] 	"rx channel idle (%)" 	100
+scalar Network.switch.mac[0] 	"rx channel utilization (%)" 	0
+scalar Network.switch.mac[0] 	"rx channel collision (%)" 	0
+scalar Network.switch.mac[0] 	collisions 	0
+scalar Network.switch.mac[0] 	backoffs 	0
+scalar Network.switch.mac[0] 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar Network.switch.mac[0] 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar Network.switch.mac[0] 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar Network.switch.mac[0] 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar Network.switch.mac[0] 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar Network.switch.mac[0] 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar Network.switch.mac[0] 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar Network.switch.mac[0] 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar Network.switch.mac[0] 	rxPkFromHL:count 	12
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar Network.switch.mac[0] 	rxPkFromHL:sum(packetBytes) 	12228
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar Network.switch.mac[0] 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar Network.switch.mac[0] 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar Network.switch.mac[0] 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar Network.switch.mac[0] 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar Network.switch.mac[0] 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Network.switch.mac[0] 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Network.switch.mac[0] 	rxPkOk:count 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar Network.switch.mac[0] 	rxPkOk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar Network.switch.mac[0] 	txPk:count 	10
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar Network.switch.mac[0] 	txPk:sum(packetBytes) 	10190
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar Network.switch.mac[1] 	"simulated time" 	0.300250519996
+scalar Network.switch.mac[1] 	full-duplex 	1
+scalar Network.switch.mac[1] 	"frames/sec sent" 	23.31386470236
+scalar Network.switch.mac[1] 	"frames/sec rcvd" 	13.322208401349
+scalar Network.switch.mac[1] 	"bits/sec sent" 	190054.62505364
+scalar Network.switch.mac[1] 	"bits/sec rcvd" 	108602.64288779
+scalar Network.switch.mac[1] 	"rx channel idle (%)" 	99.890544735775
+scalar Network.switch.mac[1] 	"rx channel utilization (%)" 	0.10945526422548
+scalar Network.switch.mac[1] 	"rx channel collision (%)" 	0
+scalar Network.switch.mac[1] 	collisions 	0
+scalar Network.switch.mac[1] 	backoffs 	0
+scalar Network.switch.mac[1] 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar Network.switch.mac[1] 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar Network.switch.mac[1] 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar Network.switch.mac[1] 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar Network.switch.mac[1] 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar Network.switch.mac[1] 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar Network.switch.mac[1] 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar Network.switch.mac[1] 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar Network.switch.mac[1] 	rxPkFromHL:count 	8
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar Network.switch.mac[1] 	rxPkFromHL:sum(packetBytes) 	8152
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar Network.switch.mac[1] 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar Network.switch.mac[1] 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar Network.switch.mac[1] 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar Network.switch.mac[1] 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar Network.switch.mac[1] 	passedUpPk:count 	4
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Network.switch.mac[1] 	passedUpPk:sum(packetBytes) 	4076
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Network.switch.mac[1] 	rxPkOk:count 	4
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar Network.switch.mac[1] 	rxPkOk:sum(packetBytes) 	4076
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar Network.switch.mac[1] 	txPk:count 	7
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar Network.switch.mac[1] 	txPk:sum(packetBytes) 	7133
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar Network.switch.mac[2] 	"simulated time" 	0.300250519996
+scalar Network.switch.mac[2] 	full-duplex 	1
+scalar Network.switch.mac[2] 	"frames/sec sent" 	23.31386470236
+scalar Network.switch.mac[2] 	"frames/sec rcvd" 	13.322208401349
+scalar Network.switch.mac[2] 	"bits/sec sent" 	190054.62505364
+scalar Network.switch.mac[2] 	"bits/sec rcvd" 	108602.64288779
+scalar Network.switch.mac[2] 	"rx channel idle (%)" 	99.890544735775
+scalar Network.switch.mac[2] 	"rx channel utilization (%)" 	0.10945526422548
+scalar Network.switch.mac[2] 	"rx channel collision (%)" 	0
+scalar Network.switch.mac[2] 	collisions 	0
+scalar Network.switch.mac[2] 	backoffs 	0
+scalar Network.switch.mac[2] 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar Network.switch.mac[2] 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar Network.switch.mac[2] 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar Network.switch.mac[2] 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar Network.switch.mac[2] 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar Network.switch.mac[2] 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar Network.switch.mac[2] 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar Network.switch.mac[2] 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar Network.switch.mac[2] 	rxPkFromHL:count 	8
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar Network.switch.mac[2] 	rxPkFromHL:sum(packetBytes) 	8152
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar Network.switch.mac[2] 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar Network.switch.mac[2] 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar Network.switch.mac[2] 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar Network.switch.mac[2] 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar Network.switch.mac[2] 	passedUpPk:count 	4
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Network.switch.mac[2] 	passedUpPk:sum(packetBytes) 	4076
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Network.switch.mac[2] 	rxPkOk:count 	4
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar Network.switch.mac[2] 	rxPkOk:sum(packetBytes) 	4076
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar Network.switch.mac[2] 	txPk:count 	7
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar Network.switch.mac[2] 	txPk:sum(packetBytes) 	7133
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar Network.switch.mac[3] 	"simulated time" 	0.300250519996
+scalar Network.switch.mac[3] 	full-duplex 	1
+scalar Network.switch.mac[3] 	"frames/sec sent" 	23.31386470236
+scalar Network.switch.mac[3] 	"frames/sec rcvd" 	13.322208401349
+scalar Network.switch.mac[3] 	"bits/sec sent" 	190054.62505364
+scalar Network.switch.mac[3] 	"bits/sec rcvd" 	108602.64288779
+scalar Network.switch.mac[3] 	"rx channel idle (%)" 	99.890544735775
+scalar Network.switch.mac[3] 	"rx channel utilization (%)" 	0.10945526422548
+scalar Network.switch.mac[3] 	"rx channel collision (%)" 	0
+scalar Network.switch.mac[3] 	collisions 	0
+scalar Network.switch.mac[3] 	backoffs 	0
+scalar Network.switch.mac[3] 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar Network.switch.mac[3] 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar Network.switch.mac[3] 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar Network.switch.mac[3] 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar Network.switch.mac[3] 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar Network.switch.mac[3] 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar Network.switch.mac[3] 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar Network.switch.mac[3] 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar Network.switch.mac[3] 	rxPkFromHL:count 	8
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar Network.switch.mac[3] 	rxPkFromHL:sum(packetBytes) 	8152
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar Network.switch.mac[3] 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar Network.switch.mac[3] 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar Network.switch.mac[3] 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar Network.switch.mac[3] 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar Network.switch.mac[3] 	passedUpPk:count 	4
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Network.switch.mac[3] 	passedUpPk:sum(packetBytes) 	4076
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Network.switch.mac[3] 	rxPkOk:count 	4
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar Network.switch.mac[3] 	rxPkOk:sum(packetBytes) 	4076
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar Network.switch.mac[3] 	txPk:count 	7
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar Network.switch.mac[3] 	txPk:sum(packetBytes) 	7133
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar Network.AP1.relayUnit 	"processed frames" 	11
+scalar Network.AP1.relayUnit 	"dropped frames" 	0
+scalar Network.AP1.relayUnit 	droppedBytes:count 	0
+attr title  "Dropped bytes, count"
+scalar Network.AP1.relayUnit 	droppedBytes:sum 	0
+attr title  "Dropped bytes, sum"
+scalar Network.AP1.relayUnit 	processedBytes:count 	0
+attr title  "Processed bytes, count"
+scalar Network.AP1.relayUnit 	processedBytes:sum 	0
+attr title  "Processed bytes, sum"
+scalar Network.AP1.relayUnit 	usedBufferBytes:max 	-1.#IND
+attr title  "Used buffer bytes, max"
+scalar Network.AP1.relayUnit 	usedBufferBytes:timeavg 	-1.#IND
+attr title  "Used buffer bytes, timeavg"
+scalar Network.AP1.mac[0] 	"simulated time" 	0.300250519996
+scalar Network.AP1.mac[0] 	full-duplex 	1
+scalar Network.AP1.mac[0] 	"frames/sec sent" 	13.322208401349
+scalar Network.AP1.mac[0] 	"frames/sec rcvd" 	23.31386470236
+scalar Network.AP1.mac[0] 	"bits/sec sent" 	108602.64288779
+scalar Network.AP1.mac[0] 	"bits/sec rcvd" 	190054.62505364
+scalar Network.AP1.mac[0] 	"rx channel idle (%)" 	99.808453287605
+scalar Network.AP1.mac[0] 	"rx channel utilization (%)" 	0.19154671239459
+scalar Network.AP1.mac[0] 	"rx channel collision (%)" 	0
+scalar Network.AP1.mac[0] 	collisions 	0
+scalar Network.AP1.mac[0] 	backoffs 	0
+scalar Network.AP1.mac[0] 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar Network.AP1.mac[0] 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar Network.AP1.mac[0] 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar Network.AP1.mac[0] 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar Network.AP1.mac[0] 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar Network.AP1.mac[0] 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar Network.AP1.mac[0] 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar Network.AP1.mac[0] 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar Network.AP1.mac[0] 	rxPkFromHL:count 	4
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar Network.AP1.mac[0] 	rxPkFromHL:sum(packetBytes) 	4076
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar Network.AP1.mac[0] 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar Network.AP1.mac[0] 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar Network.AP1.mac[0] 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar Network.AP1.mac[0] 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar Network.AP1.mac[0] 	passedUpPk:count 	7
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Network.AP1.mac[0] 	passedUpPk:sum(packetBytes) 	7133
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Network.AP1.mac[0] 	rxPkOk:count 	7
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar Network.AP1.mac[0] 	rxPkOk:sum(packetBytes) 	7133
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar Network.AP1.mac[0] 	txPk:count 	4
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar Network.AP1.mac[0] 	txPk:sum(packetBytes) 	4076
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar Network.AP1.mac[1] 	"simulated time" 	0.300250519996
+scalar Network.AP1.mac[1] 	full-duplex 	1
+scalar Network.AP1.mac[1] 	"frames/sec sent" 	19.983312602023
+scalar Network.AP1.mac[1] 	"frames/sec rcvd" 	13.322208401349
+scalar Network.AP1.mac[1] 	"bits/sec sent" 	162903.96433169
+scalar Network.AP1.mac[1] 	"bits/sec rcvd" 	108602.64288779
+scalar Network.AP1.mac[1] 	"rx channel idle (%)" 	99.890544735775
+scalar Network.AP1.mac[1] 	"rx channel utilization (%)" 	0.10945526422548
+scalar Network.AP1.mac[1] 	"rx channel collision (%)" 	0
+scalar Network.AP1.mac[1] 	collisions 	0
+scalar Network.AP1.mac[1] 	backoffs 	0
+scalar Network.AP1.mac[1] 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar Network.AP1.mac[1] 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar Network.AP1.mac[1] 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar Network.AP1.mac[1] 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar Network.AP1.mac[1] 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar Network.AP1.mac[1] 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar Network.AP1.mac[1] 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar Network.AP1.mac[1] 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar Network.AP1.mac[1] 	rxPkFromHL:count 	7
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar Network.AP1.mac[1] 	rxPkFromHL:sum(packetBytes) 	7133
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar Network.AP1.mac[1] 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar Network.AP1.mac[1] 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar Network.AP1.mac[1] 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar Network.AP1.mac[1] 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar Network.AP1.mac[1] 	passedUpPk:count 	4
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Network.AP1.mac[1] 	passedUpPk:sum(packetBytes) 	4076
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Network.AP1.mac[1] 	rxPkOk:count 	4
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar Network.AP1.mac[1] 	rxPkOk:sum(packetBytes) 	4076
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar Network.AP1.mac[1] 	txPk:count 	6
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar Network.AP1.mac[1] 	txPk:sum(packetBytes) 	6114
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar Network.AP1.mac[2] 	"simulated time" 	0.300250519996
+scalar Network.AP1.mac[2] 	full-duplex 	1
+scalar Network.AP1.mac[2] 	"frames/sec sent" 	0
+scalar Network.AP1.mac[2] 	"frames/sec rcvd" 	0
+scalar Network.AP1.mac[2] 	"bits/sec sent" 	0
+scalar Network.AP1.mac[2] 	"bits/sec rcvd" 	0
+scalar Network.AP1.mac[2] 	"rx channel idle (%)" 	100
+scalar Network.AP1.mac[2] 	"rx channel utilization (%)" 	0
+scalar Network.AP1.mac[2] 	"rx channel collision (%)" 	0
+scalar Network.AP1.mac[2] 	collisions 	0
+scalar Network.AP1.mac[2] 	backoffs 	0
+scalar Network.AP1.mac[2] 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar Network.AP1.mac[2] 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar Network.AP1.mac[2] 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar Network.AP1.mac[2] 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar Network.AP1.mac[2] 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar Network.AP1.mac[2] 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar Network.AP1.mac[2] 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar Network.AP1.mac[2] 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar Network.AP1.mac[2] 	rxPkFromHL:count 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar Network.AP1.mac[2] 	rxPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar Network.AP1.mac[2] 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar Network.AP1.mac[2] 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar Network.AP1.mac[2] 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar Network.AP1.mac[2] 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar Network.AP1.mac[2] 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Network.AP1.mac[2] 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Network.AP1.mac[2] 	rxPkOk:count 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar Network.AP1.mac[2] 	rxPkOk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar Network.AP1.mac[2] 	txPk:count 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar Network.AP1.mac[2] 	txPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar Network.AP1.mac[3] 	"simulated time" 	0.300250519996
+scalar Network.AP1.mac[3] 	full-duplex 	1
+scalar Network.AP1.mac[3] 	"frames/sec sent" 	0
+scalar Network.AP1.mac[3] 	"frames/sec rcvd" 	0
+scalar Network.AP1.mac[3] 	"bits/sec sent" 	0
+scalar Network.AP1.mac[3] 	"bits/sec rcvd" 	0
+scalar Network.AP1.mac[3] 	"rx channel idle (%)" 	100
+scalar Network.AP1.mac[3] 	"rx channel utilization (%)" 	0
+scalar Network.AP1.mac[3] 	"rx channel collision (%)" 	0
+scalar Network.AP1.mac[3] 	collisions 	0
+scalar Network.AP1.mac[3] 	backoffs 	0
+scalar Network.AP1.mac[3] 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar Network.AP1.mac[3] 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar Network.AP1.mac[3] 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar Network.AP1.mac[3] 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar Network.AP1.mac[3] 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar Network.AP1.mac[3] 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar Network.AP1.mac[3] 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar Network.AP1.mac[3] 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar Network.AP1.mac[3] 	rxPkFromHL:count 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar Network.AP1.mac[3] 	rxPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar Network.AP1.mac[3] 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar Network.AP1.mac[3] 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar Network.AP1.mac[3] 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar Network.AP1.mac[3] 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar Network.AP1.mac[3] 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Network.AP1.mac[3] 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Network.AP1.mac[3] 	rxPkOk:count 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar Network.AP1.mac[3] 	rxPkOk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar Network.AP1.mac[3] 	txPk:count 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar Network.AP1.mac[3] 	txPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar Network.AP2.relayUnit 	"processed frames" 	11
+scalar Network.AP2.relayUnit 	"dropped frames" 	0
+scalar Network.AP2.relayUnit 	droppedBytes:count 	0
+attr title  "Dropped bytes, count"
+scalar Network.AP2.relayUnit 	droppedBytes:sum 	0
+attr title  "Dropped bytes, sum"
+scalar Network.AP2.relayUnit 	processedBytes:count 	0
+attr title  "Processed bytes, count"
+scalar Network.AP2.relayUnit 	processedBytes:sum 	0
+attr title  "Processed bytes, sum"
+scalar Network.AP2.relayUnit 	usedBufferBytes:max 	-1.#IND
+attr title  "Used buffer bytes, max"
+scalar Network.AP2.relayUnit 	usedBufferBytes:timeavg 	-1.#IND
+attr title  "Used buffer bytes, timeavg"
+scalar Network.AP2.mac[0] 	"simulated time" 	0.300250519996
+scalar Network.AP2.mac[0] 	full-duplex 	1
+scalar Network.AP2.mac[0] 	"frames/sec sent" 	13.322208401349
+scalar Network.AP2.mac[0] 	"frames/sec rcvd" 	23.31386470236
+scalar Network.AP2.mac[0] 	"bits/sec sent" 	108602.64288779
+scalar Network.AP2.mac[0] 	"bits/sec rcvd" 	190054.62505364
+scalar Network.AP2.mac[0] 	"rx channel idle (%)" 	99.808453287605
+scalar Network.AP2.mac[0] 	"rx channel utilization (%)" 	0.19154671239459
+scalar Network.AP2.mac[0] 	"rx channel collision (%)" 	0
+scalar Network.AP2.mac[0] 	collisions 	0
+scalar Network.AP2.mac[0] 	backoffs 	0
+scalar Network.AP2.mac[0] 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar Network.AP2.mac[0] 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar Network.AP2.mac[0] 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar Network.AP2.mac[0] 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar Network.AP2.mac[0] 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar Network.AP2.mac[0] 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar Network.AP2.mac[0] 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar Network.AP2.mac[0] 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar Network.AP2.mac[0] 	rxPkFromHL:count 	4
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar Network.AP2.mac[0] 	rxPkFromHL:sum(packetBytes) 	4076
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar Network.AP2.mac[0] 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar Network.AP2.mac[0] 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar Network.AP2.mac[0] 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar Network.AP2.mac[0] 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar Network.AP2.mac[0] 	passedUpPk:count 	7
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Network.AP2.mac[0] 	passedUpPk:sum(packetBytes) 	7133
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Network.AP2.mac[0] 	rxPkOk:count 	7
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar Network.AP2.mac[0] 	rxPkOk:sum(packetBytes) 	7133
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar Network.AP2.mac[0] 	txPk:count 	4
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar Network.AP2.mac[0] 	txPk:sum(packetBytes) 	4076
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar Network.AP2.mac[1] 	"simulated time" 	0.300250519996
+scalar Network.AP2.mac[1] 	full-duplex 	1
+scalar Network.AP2.mac[1] 	"frames/sec sent" 	19.983312602023
+scalar Network.AP2.mac[1] 	"frames/sec rcvd" 	13.322208401349
+scalar Network.AP2.mac[1] 	"bits/sec sent" 	162903.96433169
+scalar Network.AP2.mac[1] 	"bits/sec rcvd" 	108602.64288779
+scalar Network.AP2.mac[1] 	"rx channel idle (%)" 	99.890544735775
+scalar Network.AP2.mac[1] 	"rx channel utilization (%)" 	0.10945526422548
+scalar Network.AP2.mac[1] 	"rx channel collision (%)" 	0
+scalar Network.AP2.mac[1] 	collisions 	0
+scalar Network.AP2.mac[1] 	backoffs 	0
+scalar Network.AP2.mac[1] 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar Network.AP2.mac[1] 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar Network.AP2.mac[1] 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar Network.AP2.mac[1] 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar Network.AP2.mac[1] 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar Network.AP2.mac[1] 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar Network.AP2.mac[1] 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar Network.AP2.mac[1] 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar Network.AP2.mac[1] 	rxPkFromHL:count 	7
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar Network.AP2.mac[1] 	rxPkFromHL:sum(packetBytes) 	7133
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar Network.AP2.mac[1] 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar Network.AP2.mac[1] 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar Network.AP2.mac[1] 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar Network.AP2.mac[1] 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar Network.AP2.mac[1] 	passedUpPk:count 	4
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Network.AP2.mac[1] 	passedUpPk:sum(packetBytes) 	4076
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Network.AP2.mac[1] 	rxPkOk:count 	4
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar Network.AP2.mac[1] 	rxPkOk:sum(packetBytes) 	4076
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar Network.AP2.mac[1] 	txPk:count 	6
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar Network.AP2.mac[1] 	txPk:sum(packetBytes) 	6114
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar Network.AP2.mac[2] 	"simulated time" 	0.300250519996
+scalar Network.AP2.mac[2] 	full-duplex 	1
+scalar Network.AP2.mac[2] 	"frames/sec sent" 	0
+scalar Network.AP2.mac[2] 	"frames/sec rcvd" 	0
+scalar Network.AP2.mac[2] 	"bits/sec sent" 	0
+scalar Network.AP2.mac[2] 	"bits/sec rcvd" 	0
+scalar Network.AP2.mac[2] 	"rx channel idle (%)" 	100
+scalar Network.AP2.mac[2] 	"rx channel utilization (%)" 	0
+scalar Network.AP2.mac[2] 	"rx channel collision (%)" 	0
+scalar Network.AP2.mac[2] 	collisions 	0
+scalar Network.AP2.mac[2] 	backoffs 	0
+scalar Network.AP2.mac[2] 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar Network.AP2.mac[2] 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar Network.AP2.mac[2] 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar Network.AP2.mac[2] 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar Network.AP2.mac[2] 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar Network.AP2.mac[2] 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar Network.AP2.mac[2] 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar Network.AP2.mac[2] 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar Network.AP2.mac[2] 	rxPkFromHL:count 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar Network.AP2.mac[2] 	rxPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar Network.AP2.mac[2] 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar Network.AP2.mac[2] 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar Network.AP2.mac[2] 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar Network.AP2.mac[2] 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar Network.AP2.mac[2] 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Network.AP2.mac[2] 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Network.AP2.mac[2] 	rxPkOk:count 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar Network.AP2.mac[2] 	rxPkOk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar Network.AP2.mac[2] 	txPk:count 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar Network.AP2.mac[2] 	txPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar Network.AP2.mac[3] 	"simulated time" 	0.300250519996
+scalar Network.AP2.mac[3] 	full-duplex 	1
+scalar Network.AP2.mac[3] 	"frames/sec sent" 	0
+scalar Network.AP2.mac[3] 	"frames/sec rcvd" 	0
+scalar Network.AP2.mac[3] 	"bits/sec sent" 	0
+scalar Network.AP2.mac[3] 	"bits/sec rcvd" 	0
+scalar Network.AP2.mac[3] 	"rx channel idle (%)" 	100
+scalar Network.AP2.mac[3] 	"rx channel utilization (%)" 	0
+scalar Network.AP2.mac[3] 	"rx channel collision (%)" 	0
+scalar Network.AP2.mac[3] 	collisions 	0
+scalar Network.AP2.mac[3] 	backoffs 	0
+scalar Network.AP2.mac[3] 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar Network.AP2.mac[3] 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar Network.AP2.mac[3] 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar Network.AP2.mac[3] 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar Network.AP2.mac[3] 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar Network.AP2.mac[3] 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar Network.AP2.mac[3] 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar Network.AP2.mac[3] 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar Network.AP2.mac[3] 	rxPkFromHL:count 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar Network.AP2.mac[3] 	rxPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar Network.AP2.mac[3] 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar Network.AP2.mac[3] 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar Network.AP2.mac[3] 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar Network.AP2.mac[3] 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar Network.AP2.mac[3] 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Network.AP2.mac[3] 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Network.AP2.mac[3] 	rxPkOk:count 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar Network.AP2.mac[3] 	rxPkOk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar Network.AP2.mac[3] 	txPk:count 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar Network.AP2.mac[3] 	txPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar Network.AP3.relayUnit 	"processed frames" 	11
+scalar Network.AP3.relayUnit 	"dropped frames" 	0
+scalar Network.AP3.relayUnit 	droppedBytes:count 	0
+attr title  "Dropped bytes, count"
+scalar Network.AP3.relayUnit 	droppedBytes:sum 	0
+attr title  "Dropped bytes, sum"
+scalar Network.AP3.relayUnit 	processedBytes:count 	0
+attr title  "Processed bytes, count"
+scalar Network.AP3.relayUnit 	processedBytes:sum 	0
+attr title  "Processed bytes, sum"
+scalar Network.AP3.relayUnit 	usedBufferBytes:max 	-1.#IND
+attr title  "Used buffer bytes, max"
+scalar Network.AP3.relayUnit 	usedBufferBytes:timeavg 	-1.#IND
+attr title  "Used buffer bytes, timeavg"
+scalar Network.AP3.mac[0] 	"simulated time" 	0.300250519996
+scalar Network.AP3.mac[0] 	full-duplex 	1
+scalar Network.AP3.mac[0] 	"frames/sec sent" 	13.322208401349
+scalar Network.AP3.mac[0] 	"frames/sec rcvd" 	23.31386470236
+scalar Network.AP3.mac[0] 	"bits/sec sent" 	108602.64288779
+scalar Network.AP3.mac[0] 	"bits/sec rcvd" 	190054.62505364
+scalar Network.AP3.mac[0] 	"rx channel idle (%)" 	99.808453287605
+scalar Network.AP3.mac[0] 	"rx channel utilization (%)" 	0.19154671239459
+scalar Network.AP3.mac[0] 	"rx channel collision (%)" 	0
+scalar Network.AP3.mac[0] 	collisions 	0
+scalar Network.AP3.mac[0] 	backoffs 	0
+scalar Network.AP3.mac[0] 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar Network.AP3.mac[0] 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar Network.AP3.mac[0] 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar Network.AP3.mac[0] 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar Network.AP3.mac[0] 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar Network.AP3.mac[0] 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar Network.AP3.mac[0] 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar Network.AP3.mac[0] 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar Network.AP3.mac[0] 	rxPkFromHL:count 	4
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar Network.AP3.mac[0] 	rxPkFromHL:sum(packetBytes) 	4076
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar Network.AP3.mac[0] 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar Network.AP3.mac[0] 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar Network.AP3.mac[0] 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar Network.AP3.mac[0] 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar Network.AP3.mac[0] 	passedUpPk:count 	7
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Network.AP3.mac[0] 	passedUpPk:sum(packetBytes) 	7133
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Network.AP3.mac[0] 	rxPkOk:count 	7
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar Network.AP3.mac[0] 	rxPkOk:sum(packetBytes) 	7133
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar Network.AP3.mac[0] 	txPk:count 	4
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar Network.AP3.mac[0] 	txPk:sum(packetBytes) 	4076
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar Network.AP3.mac[1] 	"simulated time" 	0.300250519996
+scalar Network.AP3.mac[1] 	full-duplex 	1
+scalar Network.AP3.mac[1] 	"frames/sec sent" 	19.983312602023
+scalar Network.AP3.mac[1] 	"frames/sec rcvd" 	13.322208401349
+scalar Network.AP3.mac[1] 	"bits/sec sent" 	162903.96433169
+scalar Network.AP3.mac[1] 	"bits/sec rcvd" 	108602.64288779
+scalar Network.AP3.mac[1] 	"rx channel idle (%)" 	99.890544735775
+scalar Network.AP3.mac[1] 	"rx channel utilization (%)" 	0.10945526422548
+scalar Network.AP3.mac[1] 	"rx channel collision (%)" 	0
+scalar Network.AP3.mac[1] 	collisions 	0
+scalar Network.AP3.mac[1] 	backoffs 	0
+scalar Network.AP3.mac[1] 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar Network.AP3.mac[1] 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar Network.AP3.mac[1] 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar Network.AP3.mac[1] 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar Network.AP3.mac[1] 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar Network.AP3.mac[1] 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar Network.AP3.mac[1] 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar Network.AP3.mac[1] 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar Network.AP3.mac[1] 	rxPkFromHL:count 	7
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar Network.AP3.mac[1] 	rxPkFromHL:sum(packetBytes) 	7133
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar Network.AP3.mac[1] 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar Network.AP3.mac[1] 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar Network.AP3.mac[1] 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar Network.AP3.mac[1] 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar Network.AP3.mac[1] 	passedUpPk:count 	4
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Network.AP3.mac[1] 	passedUpPk:sum(packetBytes) 	4076
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Network.AP3.mac[1] 	rxPkOk:count 	4
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar Network.AP3.mac[1] 	rxPkOk:sum(packetBytes) 	4076
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar Network.AP3.mac[1] 	txPk:count 	6
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar Network.AP3.mac[1] 	txPk:sum(packetBytes) 	6114
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar Network.AP3.mac[2] 	"simulated time" 	0.300250519996
+scalar Network.AP3.mac[2] 	full-duplex 	1
+scalar Network.AP3.mac[2] 	"frames/sec sent" 	0
+scalar Network.AP3.mac[2] 	"frames/sec rcvd" 	0
+scalar Network.AP3.mac[2] 	"bits/sec sent" 	0
+scalar Network.AP3.mac[2] 	"bits/sec rcvd" 	0
+scalar Network.AP3.mac[2] 	"rx channel idle (%)" 	100
+scalar Network.AP3.mac[2] 	"rx channel utilization (%)" 	0
+scalar Network.AP3.mac[2] 	"rx channel collision (%)" 	0
+scalar Network.AP3.mac[2] 	collisions 	0
+scalar Network.AP3.mac[2] 	backoffs 	0
+scalar Network.AP3.mac[2] 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar Network.AP3.mac[2] 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar Network.AP3.mac[2] 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar Network.AP3.mac[2] 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar Network.AP3.mac[2] 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar Network.AP3.mac[2] 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar Network.AP3.mac[2] 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar Network.AP3.mac[2] 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar Network.AP3.mac[2] 	rxPkFromHL:count 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar Network.AP3.mac[2] 	rxPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar Network.AP3.mac[2] 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar Network.AP3.mac[2] 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar Network.AP3.mac[2] 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar Network.AP3.mac[2] 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar Network.AP3.mac[2] 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Network.AP3.mac[2] 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Network.AP3.mac[2] 	rxPkOk:count 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar Network.AP3.mac[2] 	rxPkOk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar Network.AP3.mac[2] 	txPk:count 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar Network.AP3.mac[2] 	txPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar Network.AP3.mac[3] 	"simulated time" 	0.300250519996
+scalar Network.AP3.mac[3] 	full-duplex 	1
+scalar Network.AP3.mac[3] 	"frames/sec sent" 	0
+scalar Network.AP3.mac[3] 	"frames/sec rcvd" 	0
+scalar Network.AP3.mac[3] 	"bits/sec sent" 	0
+scalar Network.AP3.mac[3] 	"bits/sec rcvd" 	0
+scalar Network.AP3.mac[3] 	"rx channel idle (%)" 	100
+scalar Network.AP3.mac[3] 	"rx channel utilization (%)" 	0
+scalar Network.AP3.mac[3] 	"rx channel collision (%)" 	0
+scalar Network.AP3.mac[3] 	collisions 	0
+scalar Network.AP3.mac[3] 	backoffs 	0
+scalar Network.AP3.mac[3] 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar Network.AP3.mac[3] 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar Network.AP3.mac[3] 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar Network.AP3.mac[3] 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar Network.AP3.mac[3] 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar Network.AP3.mac[3] 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar Network.AP3.mac[3] 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar Network.AP3.mac[3] 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar Network.AP3.mac[3] 	rxPkFromHL:count 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar Network.AP3.mac[3] 	rxPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar Network.AP3.mac[3] 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar Network.AP3.mac[3] 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar Network.AP3.mac[3] 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar Network.AP3.mac[3] 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar Network.AP3.mac[3] 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Network.AP3.mac[3] 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Network.AP3.mac[3] 	rxPkOk:count 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar Network.AP3.mac[3] 	rxPkOk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar Network.AP3.mac[3] 	txPk:count 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar Network.AP3.mac[3] 	txPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar Network.V1.app 	sentPk:count 	4
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar Network.V1.app 	sentPk:sum(packetBytes) 	4000
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar Network.V1.app 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar Network.V1.app 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic Network.V1.app 	endToEndDelay:histogram
+field count 0
+field mean 0
+field stddev -1.#IND
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, histogram"
+attr unit  s
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	-6.9388939039072e-018	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar Network.V1.encap 	decapPk:count 	0
+attr interpolationmode  none
+attr source  decapPk
+attr title  "packets decapsulated, count"
+scalar Network.V1.encap 	decapPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  decapPk
+attr title  "packets decapsulated, sum(packetBytes)"
+scalar Network.V1.encap 	encapPk:count 	4
+attr interpolationmode  none
+attr source  encapPk
+attr title  "packets encapsulated, count"
+scalar Network.V1.encap 	encapPk:sum(packetBytes) 	4000
+attr interpolationmode  none
+attr source  encapPk
+attr title  "packets encapsulated, sum(packetBytes)"
+scalar Network.V1.queue 	queueLength:max 	0
+attr interpolationmode  sample-hold
+attr title  "queue length, max"
+scalar Network.V1.queue 	queueLength:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "queue length, timeavg"
+statistic Network.V1.queue 	queueingTime:histogram
+field count 4
+field mean 0
+field stddev 0
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr title  "queueing time, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	-6.9388939039072e-018	4
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar Network.V1.queue 	dropPk:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, count"
+scalar Network.V1.queue 	dropPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, sum(packetBytes)"
+scalar Network.V1.queue 	rcvdPk:count 	4
+attr interpolationmode  none
+attr title  "received packets, count"
+scalar Network.V1.queue 	rcvdPk:sum(packetBytes) 	4076
+attr interpolationmode  none
+attr title  "received packets, sum(packetBytes)"
+scalar Network.V1.mac 	"simulated time" 	0.300250519996
+scalar Network.V1.mac 	full-duplex 	1
+scalar Network.V1.mac 	"frames/sec sent" 	13.322208401349
+scalar Network.V1.mac 	"frames/sec rcvd" 	0
+scalar Network.V1.mac 	"bits/sec sent" 	108602.64288779
+scalar Network.V1.mac 	"bits/sec rcvd" 	0
+scalar Network.V1.mac 	"rx channel idle (%)" 	99.835817103662
+scalar Network.V1.mac 	"rx channel utilization (%)" 	0.16418289633822
+scalar Network.V1.mac 	"rx channel collision (%)" 	0
+scalar Network.V1.mac 	collisions 	0
+scalar Network.V1.mac 	backoffs 	0
+scalar Network.V1.mac 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar Network.V1.mac 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar Network.V1.mac 	droppedPkNotForUs:count 	6
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar Network.V1.mac 	droppedPkNotForUs:sum(packetBytes) 	6162
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar Network.V1.mac 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar Network.V1.mac 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar Network.V1.mac 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar Network.V1.mac 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar Network.V1.mac 	rxPkFromHL:count 	4
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar Network.V1.mac 	rxPkFromHL:sum(packetBytes) 	4076
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar Network.V1.mac 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar Network.V1.mac 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar Network.V1.mac 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar Network.V1.mac 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar Network.V1.mac 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Network.V1.mac 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Network.V1.mac 	rxPkOk:count 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar Network.V1.mac 	rxPkOk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar Network.V1.mac 	txPk:count 	4
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar Network.V1.mac 	txPk:sum(packetBytes) 	4076
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar Network.V2.app 	sentPk:count 	4
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar Network.V2.app 	sentPk:sum(packetBytes) 	4000
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar Network.V2.app 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar Network.V2.app 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic Network.V2.app 	endToEndDelay:histogram
+field count 0
+field mean 0
+field stddev -1.#IND
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, histogram"
+attr unit  s
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	-6.9388939039072e-018	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar Network.V2.encap 	decapPk:count 	0
+attr interpolationmode  none
+attr source  decapPk
+attr title  "packets decapsulated, count"
+scalar Network.V2.encap 	decapPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  decapPk
+attr title  "packets decapsulated, sum(packetBytes)"
+scalar Network.V2.encap 	encapPk:count 	4
+attr interpolationmode  none
+attr source  encapPk
+attr title  "packets encapsulated, count"
+scalar Network.V2.encap 	encapPk:sum(packetBytes) 	4000
+attr interpolationmode  none
+attr source  encapPk
+attr title  "packets encapsulated, sum(packetBytes)"
+scalar Network.V2.queue 	queueLength:max 	0
+attr interpolationmode  sample-hold
+attr title  "queue length, max"
+scalar Network.V2.queue 	queueLength:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "queue length, timeavg"
+statistic Network.V2.queue 	queueingTime:histogram
+field count 4
+field mean 0
+field stddev 0
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr title  "queueing time, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	-6.9388939039072e-018	4
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar Network.V2.queue 	dropPk:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, count"
+scalar Network.V2.queue 	dropPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, sum(packetBytes)"
+scalar Network.V2.queue 	rcvdPk:count 	4
+attr interpolationmode  none
+attr title  "received packets, count"
+scalar Network.V2.queue 	rcvdPk:sum(packetBytes) 	4076
+attr interpolationmode  none
+attr title  "received packets, sum(packetBytes)"
+scalar Network.V2.mac 	"simulated time" 	0.300250519996
+scalar Network.V2.mac 	full-duplex 	1
+scalar Network.V2.mac 	"frames/sec sent" 	13.322208401349
+scalar Network.V2.mac 	"frames/sec rcvd" 	0
+scalar Network.V2.mac 	"bits/sec sent" 	108602.64288779
+scalar Network.V2.mac 	"bits/sec rcvd" 	0
+scalar Network.V2.mac 	"rx channel idle (%)" 	99.835817103662
+scalar Network.V2.mac 	"rx channel utilization (%)" 	0.16418289633822
+scalar Network.V2.mac 	"rx channel collision (%)" 	0
+scalar Network.V2.mac 	collisions 	0
+scalar Network.V2.mac 	backoffs 	0
+scalar Network.V2.mac 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar Network.V2.mac 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar Network.V2.mac 	droppedPkNotForUs:count 	6
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar Network.V2.mac 	droppedPkNotForUs:sum(packetBytes) 	6162
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar Network.V2.mac 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar Network.V2.mac 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar Network.V2.mac 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar Network.V2.mac 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar Network.V2.mac 	rxPkFromHL:count 	4
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar Network.V2.mac 	rxPkFromHL:sum(packetBytes) 	4076
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar Network.V2.mac 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar Network.V2.mac 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar Network.V2.mac 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar Network.V2.mac 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar Network.V2.mac 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Network.V2.mac 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Network.V2.mac 	rxPkOk:count 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar Network.V2.mac 	rxPkOk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar Network.V2.mac 	txPk:count 	4
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar Network.V2.mac 	txPk:sum(packetBytes) 	4076
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar Network.V3.app 	sentPk:count 	4
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar Network.V3.app 	sentPk:sum(packetBytes) 	4000
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar Network.V3.app 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar Network.V3.app 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic Network.V3.app 	endToEndDelay:histogram
+field count 0
+field mean 0
+field stddev -1.#IND
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, histogram"
+attr unit  s
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	-6.9388939039072e-018	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar Network.V3.encap 	decapPk:count 	0
+attr interpolationmode  none
+attr source  decapPk
+attr title  "packets decapsulated, count"
+scalar Network.V3.encap 	decapPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  decapPk
+attr title  "packets decapsulated, sum(packetBytes)"
+scalar Network.V3.encap 	encapPk:count 	4
+attr interpolationmode  none
+attr source  encapPk
+attr title  "packets encapsulated, count"
+scalar Network.V3.encap 	encapPk:sum(packetBytes) 	4000
+attr interpolationmode  none
+attr source  encapPk
+attr title  "packets encapsulated, sum(packetBytes)"
+scalar Network.V3.queue 	queueLength:max 	0
+attr interpolationmode  sample-hold
+attr title  "queue length, max"
+scalar Network.V3.queue 	queueLength:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "queue length, timeavg"
+statistic Network.V3.queue 	queueingTime:histogram
+field count 4
+field mean 0
+field stddev 0
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr title  "queueing time, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	-6.9388939039072e-018	4
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar Network.V3.queue 	dropPk:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, count"
+scalar Network.V3.queue 	dropPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, sum(packetBytes)"
+scalar Network.V3.queue 	rcvdPk:count 	4
+attr interpolationmode  none
+attr title  "received packets, count"
+scalar Network.V3.queue 	rcvdPk:sum(packetBytes) 	4076
+attr interpolationmode  none
+attr title  "received packets, sum(packetBytes)"
+scalar Network.V3.mac 	"simulated time" 	0.300250519996
+scalar Network.V3.mac 	full-duplex 	1
+scalar Network.V3.mac 	"frames/sec sent" 	13.322208401349
+scalar Network.V3.mac 	"frames/sec rcvd" 	0
+scalar Network.V3.mac 	"bits/sec sent" 	108602.64288779
+scalar Network.V3.mac 	"bits/sec rcvd" 	0
+scalar Network.V3.mac 	"rx channel idle (%)" 	99.835817103662
+scalar Network.V3.mac 	"rx channel utilization (%)" 	0.16418289633822
+scalar Network.V3.mac 	"rx channel collision (%)" 	0
+scalar Network.V3.mac 	collisions 	0
+scalar Network.V3.mac 	backoffs 	0
+scalar Network.V3.mac 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar Network.V3.mac 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar Network.V3.mac 	droppedPkNotForUs:count 	6
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar Network.V3.mac 	droppedPkNotForUs:sum(packetBytes) 	6162
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar Network.V3.mac 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar Network.V3.mac 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar Network.V3.mac 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar Network.V3.mac 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar Network.V3.mac 	rxPkFromHL:count 	4
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar Network.V3.mac 	rxPkFromHL:sum(packetBytes) 	4076
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar Network.V3.mac 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar Network.V3.mac 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar Network.V3.mac 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar Network.V3.mac 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar Network.V3.mac 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Network.V3.mac 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Network.V3.mac 	rxPkOk:count 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar Network.V3.mac 	rxPkOk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar Network.V3.mac 	txPk:count 	4
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar Network.V3.mac 	txPk:sum(packetBytes) 	4076
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"

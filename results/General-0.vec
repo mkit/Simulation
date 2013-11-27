@@ -1,0 +1,738 @@
+version 2
+run General-0-20131127-18:15:30-7016
+attr configname General
+attr datetime 20131127-18:15:30
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Network
+attr processid 7016
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 8  Network.ICS.queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 216  Network.V1.queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 236  Network.V2.queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 256  Network.V3.queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 209  Network.V1.app  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 229  Network.V2.app  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 249  Network.V3.app  sentPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, vector(packetBytes)"
+vector 211  Network.V1.encap  encapPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  encapPk
+attr title  "packets encapsulated, vector(packetBytes)"
+vector 231  Network.V2.encap  encapPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  encapPk
+attr title  "packets encapsulated, vector(packetBytes)"
+vector 251  Network.V3.encap  encapPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  encapPk
+attr title  "packets encapsulated, vector(packetBytes)"
+vector 213  Network.V1.queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 215  Network.V1.queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 233  Network.V2.queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 235  Network.V2.queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 253  Network.V3.queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 255  Network.V3.queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 222  Network.V1.mac  rxPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, vector(packetBytes)"
+vector 242  Network.V2.mac  rxPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, vector(packetBytes)"
+vector 262  Network.V3.mac  rxPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, vector(packetBytes)"
+vector 217  Network.V1.mac  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, vector(packetBytes)"
+vector 237  Network.V2.mac  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, vector(packetBytes)"
+vector 257  Network.V3.mac  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, vector(packetBytes)"
+vector 82  Network.AP1.mac[1]  rxPkOk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, vector(packetBytes)"
+vector 83  Network.AP1.mac[1]  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 129  Network.AP2.mac[1]  rxPkOk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, vector(packetBytes)"
+vector 130  Network.AP2.mac[1]  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 176  Network.AP3.mac[1]  rxPkOk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, vector(packetBytes)"
+vector 177  Network.AP3.mac[1]  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 269  Network.AP1.relayUnit  "buffer level"  ETV
+vector 270  Network.AP2.relayUnit  "buffer level"  ETV
+vector 271  Network.AP3.relayUnit  "buffer level"  ETV
+vector 75  Network.AP1.mac[0]  rxPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, vector(packetBytes)"
+vector 122  Network.AP2.mac[0]  rxPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, vector(packetBytes)"
+vector 169  Network.AP3.mac[0]  rxPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, vector(packetBytes)"
+vector 70  Network.AP1.mac[0]  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, vector(packetBytes)"
+vector 117  Network.AP2.mac[0]  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, vector(packetBytes)"
+vector 164  Network.AP3.mac[0]  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, vector(packetBytes)"
+vector 35  Network.switch.mac[1]  rxPkOk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, vector(packetBytes)"
+vector 36  Network.switch.mac[1]  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 46  Network.switch.mac[2]  rxPkOk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, vector(packetBytes)"
+vector 47  Network.switch.mac[2]  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 57  Network.switch.mac[3]  rxPkOk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, vector(packetBytes)"
+vector 58  Network.switch.mac[3]  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 268  Network.switch.relayUnit  "buffer level"  ETV
+vector 28  Network.switch.mac[0]  rxPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, vector(packetBytes)"
+vector 50  Network.switch.mac[2]  rxPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, vector(packetBytes)"
+vector 61  Network.switch.mac[3]  rxPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, vector(packetBytes)"
+vector 39  Network.switch.mac[1]  rxPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, vector(packetBytes)"
+vector 23  Network.switch.mac[0]  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, vector(packetBytes)"
+vector 45  Network.switch.mac[2]  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, vector(packetBytes)"
+vector 56  Network.switch.mac[3]  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, vector(packetBytes)"
+vector 34  Network.switch.mac[1]  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, vector(packetBytes)"
+vector 10  Network.ICS.mac  rxPkOk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, vector(packetBytes)"
+vector 11  Network.ICS.mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 118  Network.AP2.mac[0]  rxPkOk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, vector(packetBytes)"
+vector 119  Network.AP2.mac[0]  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 165  Network.AP3.mac[0]  rxPkOk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, vector(packetBytes)"
+vector 166  Network.AP3.mac[0]  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 71  Network.AP1.mac[0]  rxPkOk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, vector(packetBytes)"
+vector 72  Network.AP1.mac[0]  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 4  Network.ICS.encap  decapPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  decapPk
+attr title  "packets decapsulated, vector(packetBytes)"
+vector 0  Network.ICS.app  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, vector(packetBytes)"
+vector 2  Network.ICS.app  endToEndDelay:vector  ETV
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, vector"
+attr unit  s
+vector 133  Network.AP2.mac[1]  rxPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, vector(packetBytes)"
+vector 180  Network.AP3.mac[1]  rxPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, vector(packetBytes)"
+vector 86  Network.AP1.mac[1]  rxPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, vector(packetBytes)"
+vector 128  Network.AP2.mac[1]  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, vector(packetBytes)"
+vector 175  Network.AP3.mac[1]  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, vector(packetBytes)"
+vector 81  Network.AP1.mac[1]  txPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, vector(packetBytes)"
+vector 245  Network.V2.mac  droppedPkNotForUs:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, vector(packetBytes)"
+vector 265  Network.V3.mac  droppedPkNotForUs:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, vector(packetBytes)"
+vector 225  Network.V1.mac  droppedPkNotForUs:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, vector(packetBytes)"
+0	87	0.000249659997	1000
+0	129	0.000332779996	1000
+0	159	0.000415899995	1000
+0	249	0.100249659997	1000
+0	291	0.100332779996	1000
+0	321	0.100415899995	1000
+0	411	0.200249659997	1000
+0	453	0.200332779996	1000
+0	483	0.200415899995	1000
+0	573	0.300249659997	1000
+2	87	0.000249659997	0.000249659997
+2	129	0.000332779996	0.000332779996
+2	159	0.000415899995	0.000415899995
+2	249	0.100249659997	0.000249659997
+2	291	0.100332779996	0.000332779996
+2	321	0.100415899995	0.000415899995
+2	411	0.200249659997	0.000249659997
+2	453	0.200332779996	0.000332779996
+2	483	0.200415899995	0.000415899995
+2	573	0.300249659997	0.000249659997
+4	83	0.000249659997	1000
+4	125	0.000332779996	1000
+4	158	0.000415899995	1000
+4	245	0.100249659997	1000
+4	287	0.100332779996	1000
+4	320	0.100415899995	1000
+4	407	0.200249659997	1000
+4	449	0.200332779996	1000
+4	482	0.200415899995	1000
+4	569	0.300249659997	1000
+8	0	0	0
+10	79	0.000249659997	1019
+10	121	0.000332779996	1019
+10	157	0.000415899995	1019
+10	241	0.100249659997	1019
+10	283	0.100332779996	1019
+10	319	0.100415899995	1019
+10	403	0.200249659997	1019
+10	445	0.200332779996	1019
+10	481	0.200415899995	1019
+10	565	0.300249659997	1019
+11	79	0.000249659997	1019
+11	121	0.000332779996	1019
+11	157	0.000415899995	1019
+11	241	0.100249659997	1019
+11	283	0.100332779996	1019
+11	319	0.100415899995	1019
+11	403	0.200249659997	1019
+11	445	0.200332779996	1019
+11	481	0.200415899995	1019
+11	565	0.300249659997	1019
+23	75	0.000249559997	1019
+23	114	0.000332679996	1019
+23	153	0.000415799995	1019
+23	237	0.100249559997	1019
+23	276	0.100332679996	1019
+23	315	0.100415799995	1019
+23	399	0.200249559997	1019
+23	438	0.200332679996	1019
+23	477	0.200415799995	1019
+23	561	0.300249559997	1019
+28	56	0.000166439998	1019
+28	60	0.000166439998	1019
+28	64	0.000166439998	1019
+28	218	0.100166439998	1019
+28	222	0.100166439998	1019
+28	226	0.100166439998	1019
+28	380	0.200166439998	1019
+28	384	0.200166439998	1019
+28	388	0.200166439998	1019
+28	542	0.300166439998	1019
+28	546	0.300166439998	1019
+28	550	0.300166439998	1019
+34	78	0.000249559997	1019
+34	117	0.000332679996	1019
+34	240	0.100249559997	1019
+34	279	0.100332679996	1019
+34	402	0.200249559997	1019
+34	441	0.200332679996	1019
+34	564	0.300249559997	1019
+35	49	0.000166439998	1019
+35	211	0.100166439998	1019
+35	373	0.200166439998	1019
+35	535	0.300166439998	1019
+36	49	0.000166439998	1019
+36	211	0.100166439998	1019
+36	373	0.200166439998	1019
+36	535	0.300166439998	1019
+39	61	0.000166439998	1019
+39	65	0.000166439998	1019
+39	223	0.100166439998	1019
+39	227	0.100166439998	1019
+39	385	0.200166439998	1019
+39	389	0.200166439998	1019
+39	547	0.300166439998	1019
+39	551	0.300166439998	1019
+45	76	0.000249559997	1019
+45	115	0.000332679996	1019
+45	238	0.100249559997	1019
+45	277	0.100332679996	1019
+45	400	0.200249559997	1019
+45	439	0.200332679996	1019
+45	562	0.300249559997	1019
+46	50	0.000166439998	1019
+46	212	0.100166439998	1019
+46	374	0.200166439998	1019
+46	536	0.300166439998	1019
+47	50	0.000166439998	1019
+47	212	0.100166439998	1019
+47	374	0.200166439998	1019
+47	536	0.300166439998	1019
+50	57	0.000166439998	1019
+50	66	0.000166439998	1019
+50	219	0.100166439998	1019
+50	228	0.100166439998	1019
+50	381	0.200166439998	1019
+50	390	0.200166439998	1019
+50	543	0.300166439998	1019
+50	552	0.300166439998	1019
+56	77	0.000249559997	1019
+56	116	0.000332679996	1019
+56	239	0.100249559997	1019
+56	278	0.100332679996	1019
+56	401	0.200249559997	1019
+56	440	0.200332679996	1019
+56	563	0.300249559997	1019
+57	51	0.000166439998	1019
+57	213	0.100166439998	1019
+57	375	0.200166439998	1019
+57	537	0.300166439998	1019
+58	51	0.000166439998	1019
+58	213	0.100166439998	1019
+58	375	0.200166439998	1019
+58	537	0.300166439998	1019
+61	58	0.000166439998	1019
+61	62	0.000166439998	1019
+61	220	0.100166439998	1019
+61	224	0.100166439998	1019
+61	382	0.200166439998	1019
+61	386	0.200166439998	1019
+61	544	0.300166439998	1019
+61	548	0.300166439998	1019
+70	46	0.000166339998	1019
+70	208	0.100166339998	1019
+70	370	0.200166339998	1019
+70	532	0.300166339998	1019
+71	82	0.000249659997	1019
+71	124	0.000332779996	1019
+71	244	0.100249659997	1019
+71	286	0.100332779996	1019
+71	406	0.200249659997	1019
+71	448	0.200332779996	1019
+71	568	0.300249659997	1019
+72	82	0.000249659997	1019
+72	124	0.000332779996	1019
+72	244	0.100249659997	1019
+72	286	0.100332779996	1019
+72	406	0.200249659997	1019
+72	448	0.200332779996	1019
+72	568	0.300249659997	1019
+75	31	0.000083219999	1019
+75	193	0.100083219999	1019
+75	355	0.200083219999	1019
+75	517	0.300083219999	1019
+81	120	0.000332779996	1019
+81	156	0.000415899995	1019
+81	282	0.100332779996	1019
+81	318	0.100415899995	1019
+81	444	0.200332779996	1019
+81	480	0.200415899995	1019
+82	22	0.000083219999	1019
+82	184	0.100083219999	1019
+82	346	0.200083219999	1019
+82	508	0.300083219999	1019
+83	22	0.000083219999	1019
+83	184	0.100083219999	1019
+83	346	0.200083219999	1019
+83	508	0.300083219999	1019
+86	97	0.000249659997	1019
+86	139	0.000332779996	1019
+86	259	0.100249659997	1019
+86	301	0.100332779996	1019
+86	421	0.200249659997	1019
+86	463	0.200332779996	1019
+86	583	0.300249659997	1019
+117	47	0.000166339998	1019
+117	209	0.100166339998	1019
+117	371	0.200166339998	1019
+117	533	0.300166339998	1019
+118	80	0.000249659997	1019
+118	122	0.000332779996	1019
+118	242	0.100249659997	1019
+118	284	0.100332779996	1019
+118	404	0.200249659997	1019
+118	446	0.200332779996	1019
+118	566	0.300249659997	1019
+119	80	0.000249659997	1019
+119	122	0.000332779996	1019
+119	242	0.100249659997	1019
+119	284	0.100332779996	1019
+119	404	0.200249659997	1019
+119	446	0.200332779996	1019
+119	566	0.300249659997	1019
+122	34	0.000083219999	1019
+122	196	0.100083219999	1019
+122	358	0.200083219999	1019
+122	520	0.300083219999	1019
+128	118	0.000332779996	1019
+128	154	0.000415899995	1019
+128	280	0.100332779996	1019
+128	316	0.100415899995	1019
+128	442	0.200332779996	1019
+128	478	0.200415899995	1019
+129	23	0.000083219999	1019
+129	185	0.100083219999	1019
+129	347	0.200083219999	1019
+129	509	0.300083219999	1019
+130	23	0.000083219999	1019
+130	185	0.100083219999	1019
+130	347	0.200083219999	1019
+130	509	0.300083219999	1019
+133	91	0.000249659997	1019
+133	133	0.000332779996	1019
+133	253	0.100249659997	1019
+133	295	0.100332779996	1019
+133	415	0.200249659997	1019
+133	457	0.200332779996	1019
+133	577	0.300249659997	1019
+164	48	0.000166339998	1019
+164	210	0.100166339998	1019
+164	372	0.200166339998	1019
+164	534	0.300166339998	1019
+165	81	0.000249659997	1019
+165	123	0.000332779996	1019
+165	243	0.100249659997	1019
+165	285	0.100332779996	1019
+165	405	0.200249659997	1019
+165	447	0.200332779996	1019
+165	567	0.300249659997	1019
+166	81	0.000249659997	1019
+166	123	0.000332779996	1019
+166	243	0.100249659997	1019
+166	285	0.100332779996	1019
+166	405	0.200249659997	1019
+166	447	0.200332779996	1019
+166	567	0.300249659997	1019
+169	37	0.000083219999	1019
+169	199	0.100083219999	1019
+169	361	0.200083219999	1019
+169	523	0.300083219999	1019
+175	119	0.000332779996	1019
+175	155	0.000415899995	1019
+175	281	0.100332779996	1019
+175	317	0.100415899995	1019
+175	443	0.200332779996	1019
+175	479	0.200415899995	1019
+176	24	0.000083219999	1019
+176	186	0.100083219999	1019
+176	348	0.200083219999	1019
+176	510	0.300083219999	1019
+177	24	0.000083219999	1019
+177	186	0.100083219999	1019
+177	348	0.200083219999	1019
+177	510	0.300083219999	1019
+180	94	0.000249659997	1019
+180	136	0.000332779996	1019
+180	256	0.100249659997	1019
+180	298	0.100332779996	1019
+180	418	0.200249659997	1019
+180	460	0.200332779996	1019
+180	580	0.300249659997	1019
+209	1	0	1000
+209	163	0.1	1000
+209	325	0.2	1000
+209	487	0.3	1000
+211	4	0	1000
+211	166	0.1	1000
+211	328	0.2	1000
+211	490	0.3	1000
+213	7	0	1019
+213	169	0.1	1019
+213	331	0.2	1019
+213	493	0.3	1019
+215	7	0	0
+215	169	0.1	0
+215	331	0.2	0
+215	493	0.3	0
+216	0	0	0
+217	19	0.000083119999	1019
+217	181	0.100083119999	1019
+217	343	0.200083119999	1019
+217	505	0.300083119999	1019
+222	10	0	1019
+222	172	0.1	1019
+222	334	0.2	1019
+222	496	0.3	1019
+225	144	0.000332879996	1027
+225	162	0.000415999995	1027
+225	306	0.100332879996	1027
+225	324	0.100415999995	1027
+225	468	0.200332879996	1027
+225	486	0.200415999995	1027
+229	2	0	1000
+229	164	0.1	1000
+229	326	0.2	1000
+229	488	0.3	1000
+231	5	0	1000
+231	167	0.1	1000
+231	329	0.2	1000
+231	491	0.3	1000
+233	8	0	1019
+233	170	0.1	1019
+233	332	0.2	1019
+233	494	0.3	1019
+235	8	0	0
+235	170	0.1	0
+235	332	0.2	0
+235	494	0.3	0
+236	0	0	0
+237	20	0.000083119999	1019
+237	182	0.100083119999	1019
+237	344	0.200083119999	1019
+237	506	0.300083119999	1019
+242	11	0	1019
+242	173	0.1	1019
+242	335	0.2	1019
+242	497	0.3	1019
+245	142	0.000332879996	1027
+245	160	0.000415999995	1027
+245	304	0.100332879996	1027
+245	322	0.100415999995	1027
+245	466	0.200332879996	1027
+245	484	0.200415999995	1027
+249	3	0	1000
+249	165	0.1	1000
+249	327	0.2	1000
+249	489	0.3	1000
+251	6	0	1000
+251	168	0.1	1000
+251	330	0.2	1000
+251	492	0.3	1000
+253	9	0	1019
+253	171	0.1	1019
+253	333	0.2	1019
+253	495	0.3	1019
+255	9	0	0
+255	171	0.1	0
+255	333	0.2	0
+255	495	0.3	0
+256	0	0	0
+257	21	0.000083119999	1019
+257	183	0.100083119999	1019
+257	345	0.200083119999	1019
+257	507	0.300083119999	1019
+262	12	0	1019
+262	174	0.1	1019
+262	336	0.2	1019
+262	498	0.3	1019
+265	143	0.000332879996	1027
+265	161	0.000415999995	1027
+265	305	0.100332879996	1027
+265	323	0.100415999995	1027
+265	467	0.200332879996	1027
+265	485	0.200415999995	1027
+268	52	0.000166439998	1019
+268	53	0.000166439998	2038
+268	54	0.000166439998	3057
+268	55	0.000166439998	2038
+268	59	0.000166439998	1019
+268	63	0.000166439998	0
+268	214	0.100166439998	1019
+268	215	0.100166439998	2038
+268	216	0.100166439998	3057
+268	217	0.100166439998	2038
+268	221	0.100166439998	1019
+268	225	0.100166439998	0
+268	376	0.200166439998	1019
+268	377	0.200166439998	2038
+268	378	0.200166439998	3057
+268	379	0.200166439998	2038
+268	383	0.200166439998	1019
+268	387	0.200166439998	0
+268	538	0.300166439998	1019
+268	539	0.300166439998	2038
+268	540	0.300166439998	3057
+268	541	0.300166439998	2038
+268	545	0.300166439998	1019
+268	549	0.300166439998	0
+269	25	0.000083219999	1019
+269	28	0.000083219999	0
+269	86	0.000249659997	1019
+269	90	0.000249659997	0
+269	128	0.000332779996	1019
+269	132	0.000332779996	0
+269	187	0.100083219999	1019
+269	190	0.100083219999	0
+269	248	0.100249659997	1019
+269	252	0.100249659997	0
+269	290	0.100332779996	1019
+269	294	0.100332779996	0
+269	349	0.200083219999	1019
+269	352	0.200083219999	0
+269	410	0.200249659997	1019
+269	414	0.200249659997	0
+269	452	0.200332779996	1019
+269	456	0.200332779996	0
+269	511	0.300083219999	1019
+269	514	0.300083219999	0
+269	572	0.300249659997	1019
+269	576	0.300249659997	0
+270	26	0.000083219999	1019
+270	29	0.000083219999	0
+270	84	0.000249659997	1019
+270	88	0.000249659997	0
+270	126	0.000332779996	1019
+270	130	0.000332779996	0
+270	188	0.100083219999	1019
+270	191	0.100083219999	0
+270	246	0.100249659997	1019
+270	250	0.100249659997	0
+270	288	0.100332779996	1019
+270	292	0.100332779996	0
+270	350	0.200083219999	1019
+270	353	0.200083219999	0
+270	408	0.200249659997	1019
+270	412	0.200249659997	0
+270	450	0.200332779996	1019
+270	454	0.200332779996	0
+270	512	0.300083219999	1019
+270	515	0.300083219999	0
+270	570	0.300249659997	1019
+270	574	0.300249659997	0
+271	27	0.000083219999	1019
+271	30	0.000083219999	0
+271	85	0.000249659997	1019
+271	89	0.000249659997	0
+271	127	0.000332779996	1019
+271	131	0.000332779996	0
+271	189	0.100083219999	1019
+271	192	0.100083219999	0
+271	247	0.100249659997	1019
+271	251	0.100249659997	0
+271	289	0.100332779996	1019
+271	293	0.100332779996	0
+271	351	0.200083219999	1019
+271	354	0.200083219999	0
+271	409	0.200249659997	1019
+271	413	0.200249659997	0
+271	451	0.200332779996	1019
+271	455	0.200332779996	0
+271	513	0.300083219999	1019
+271	516	0.300083219999	0
+271	571	0.300249659997	1019
+271	575	0.300249659997	0
