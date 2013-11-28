@@ -21,6 +21,7 @@ import inet.linklayer.IOutputQueue;
 module PriorityEtherHost
 {
 	parameters:
+	    bool dynamicAPConnections = default(false);
         bool csmacdSupport = default(true);  // by default use CSMA/CD
         bool staticConnections = default(true);
         string macType = default(csmacdSupport ? "EtherMAC" : "EtherMACFullDuplex"); // ~EtherMAC or ~EtherMACFullDuplex

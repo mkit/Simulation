@@ -19,7 +19,10 @@ import ned.DatarateChannel;
 
 network Network
 {
-    @display("bgb=328,308");
+    parameters:
+        int accessPointCount = default(3);
+        int vehicleCount = default(3);
+        @display("bgb=328,308");
     types:
         channel C extends DatarateChannel
         {
@@ -29,50 +32,26 @@ network Network
     submodules:
         ICS: PriorityEtherHost {
             parameters:
-                @display("p=162,260");
+                @display("p=65,270");
         }
         switch: PriorityEtherSwitch {
-            parameters:
-                @display("p=162,173");
+            @display("p=78,197");
             gates:
-                ethg[4];
+                ethg[accessPointCount + 1];
         }
-        AP1: PriorityEtherSwitch {
+        ap[accessPointCount]: PriorityEtherSwitch {
             parameters:
-                @display("p=63,104");
+                relayUnitType = "PriorityMACRelayUnitNPAccessPoint";
             gates:
-                ethg[4];
+                ethg[vehicleCount+1];
         }
-        AP2: PriorityEtherSwitch {
+        v[vehicleCount]: PriorityEtherHost {
             parameters:
-                @display("p=162,104");
-            gates:
-                ethg[4];
-        }
-        AP3: PriorityEtherSwitch {
-            parameters:
-                @display("p=261,104");
-            gates:
-                ethg[4];
-        }
-        V1: PriorityEtherHost {
-            parameters:
-                @display("p=63,31");
-        }
-        V2: PriorityEtherHost {
-            parameters:
-                @display("p=162,31");
-        }
-        V3: PriorityEtherHost {
-            parameters:
-                @display("p=261,31");
+                dynamicAPConnections = true;
         }
     connections allowunconnected:
         switch.ethg[0] <--> C <--> ICS.ethg;
-        switch.ethg[1] <--> C <--> AP1.ethg[0];
-        switch.ethg[2] <--> C <--> AP2.ethg[0];
-        switch.ethg[3] <--> C <--> AP3.ethg[0];
-        V1.ethg <--> C <--> AP1.ethg[1];
-        V2.ethg <--> C <--> AP2.ethg[1];
-        V3.ethg <--> C <--> AP3.ethg[1];
+        for i=0..accessPointCount-1 {
+            switch.ethg[i+1] <--> C <--> ap[i].ethg[0];
+        }
 }

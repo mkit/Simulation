@@ -18,6 +18,9 @@
 
 #include <omnetpp.h>
 #include <MACAddress.h>
+#include "cModule.h"
+#include <vector>
+#include <string>
 
 /**
  * TODO - Generated class
@@ -43,6 +46,10 @@ protected:
   long packetsReceived;
   static simsignal_t sentPkSignal;
   static simsignal_t rcvdPkSignal;
+
+  bool dynamicAPConnections;
+  cModule *currentlyAPConnected;
+  std::vector<std::string> accessPointPaths;
 
   void reconnect();
 

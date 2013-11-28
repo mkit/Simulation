@@ -15,7 +15,6 @@
 
 #include "PriorityTrafficGenerator.h"
 #include "Ieee802Ctrl_m.h"
-#include "cModule.h"
 
 
 Define_Module(PriorityTrafficGenerator);
@@ -67,6 +66,24 @@ void PriorityTrafficGenerator::initialize(int stage)
 
         timerMsg = new cMessage("generateNextPacket");
         scheduleAt(startTime, timerMsg);
+
+        //find access points
+        cModule *parent = getParentModule();
+        if (parent->hasPar("dynamicAPConnections"))
+            dynamicAPConnections = parent->par("dynamicAPConnections");
+        else
+            dynamicAPConnections = false;
+        if (dynamicAPConnections) {
+            cModule *network = simulation.getSystemModule();
+            for (SubmoduleIterator iter(network); !iter.end(); iter++)
+            {
+                if (iter()->hasPar("relayUnitType")
+                        && opp_strcmp(iter()->par("relayUnitType"), "PriorityMACRelayUnitNPAccessPoint") == 0) {
+                           accessPointPaths.push_back(iter()->getFullPath());
+                }
+
+            }
+        }
     }
 }
 
@@ -106,14 +123,34 @@ void PriorityTrafficGenerator::handleMessage(cMessage *msg)
     {
         receivePacket(check_and_cast<cPacket*>(msg));
     }
-    if (intrand(2) % 2 == 0) {
+    if (dynamicAPConnections && intrand(2) % 2 == 0) {
         // reconnect
         reconnect();
     }
 }
 
 void PriorityTrafficGenerator::reconnect() {
-    //TODO dynamic reconnection
+    if (accessPointPaths.size() > 0) {
+        std::string connectToPath = accessPointPaths[intrand(accessPointPaths.size())];
+        cModule *network = simulation.getSystemModule();
+        cModule *connectTo = network->getModuleByPath(connectToPath.c_str());
+        if (connectTo != currentlyAPConnected) {
+            cModule *parent = getParentModule();
+            if (currentlyAPConnected != NULL) {
+               //disconnect
+                currentlyAPConnected->gate("ethg$o", parent->getIndex() + 1)->disconnect();
+                parent->gate("ethg$o")->disconnect();
+            }
+            //connect to AP
+            currentlyAPConnected = connectTo;
+            cChannelType *channelType = cChannelType::get("backbone.Network.C");
+            cChannel *channel = channelType->create("channelAP");
+            currentlyAPConnected->gate("ethg$o", parent->getIndex() + 1)->connectTo(parent->gate("ethg$i"), channel);
+            channel = channelType->create("channelV");
+            parent->gate("ethg$o")->connectTo(currentlyAPConnected->gate("ethg$i", parent->getIndex() + 1), channel);
+        }
+    }
+
 }
 
 void PriorityTrafficGenerator::sendBurstPackets()
